@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <link rel="stylesheet" href="CSS/style02.css">
+</head>
+<body>
+    <header id="header">
+<h2>javascript - dom</h2>
+
+    </header>
+<main>
+<button id="btnmulher">mulher</button>
+<button id="btnhomem">homem</button>
+</main>
+<footer id="footer">
+<h4>&copy; developer by phtech </h4>
+</footer>
+
+</body>
+<script>
+    document.getElementById("btnmulher").addEventListener("click",function(){
+document.getElementById("header").style.backgroundColor = "blueviolet";
+    },false);
+
+    document.getElementById("btnhomem").addEventListener("click", function(){
+        document.getElementById("header").style.backgroundColor = "blue";
+    },false);
+</script>
+
+</html>

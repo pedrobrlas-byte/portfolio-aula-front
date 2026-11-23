@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laços de repetiçao</title>
+</head>
+<body>
+    <h2>while</h2>
+    <p id="while"></p>
+
+    <h2>for</h2>
+    <p id="for"></p>
+
+    <h2>tabuada</h2>
+    <p id="tab"></p>
+
+
+</body>
+<script>
+ //laço while
+let contador = 1;
+let text = "";
+
+while(contador <=5){
+    //alert("volta"+ contador);
+    Text = Text + "o numero e:"+contador+"<br>"
+    contador++;
+}
+document.getElementById("while").innerHTML = Text;
+
+//laço for
+let texto = "";
+
+for(let cont=1; cont<=10; cont++){
+    texto = texto + "o numero e: "+cont+"<br>"
+
+}
+document.getElementById("for").innerHTML = texto;
+
+//tabuada 5
+let res = "";
+for(let cont=0; cont<=10; cont++){
+    res = res +"5 x"+cont+" = "+5*cont+"<br>"
+}
+document.getElementById("tab").innerHTML = res;
+</script>
+</html>
